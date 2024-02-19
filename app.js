@@ -18,12 +18,15 @@ async function fetchWeather(url) {
     return;
   }
 
+  /** Todo: handle api error */
+
   document.querySelector(".weather").style.display = "block";
   document.querySelector(".city").innerHTML = data.name;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
+  /** Todo: update with correct images, if possible replace with svg  */
   switch (data.weather[0].main) {
     case "Clear":
       setWeatherIcon("images/clear.png");
