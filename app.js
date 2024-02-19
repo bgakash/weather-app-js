@@ -1,4 +1,4 @@
-const apiKey = "0c42b7b1aabd8766e38ca140097c091a";
+const apiKey = "{user_your_api_key}"; // use api key from openweather
 
 const searchBox = document.querySelector(".search input");
 const searchButton = document.querySelector(".search button");
